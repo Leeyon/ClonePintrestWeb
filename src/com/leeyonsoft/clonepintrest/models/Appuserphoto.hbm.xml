@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-12-16 20:05:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="UserPhotoEntity" table="appuserphoto" catalog="ClonePintrest" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="int">
+            <column name="userId" not-null="true" />
+        </property>
+        <property name="photoId" type="int">
+            <column name="photoId" not-null="true" />
+        </property>
+        <property name="isOwner" type="boolean">
+            <column name="isOwner" not-null="true" />
+        </property>
+        <property name="isPublic" type="boolean">
+            <column name="isPublic" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
