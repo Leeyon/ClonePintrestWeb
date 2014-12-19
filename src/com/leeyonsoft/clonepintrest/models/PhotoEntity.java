@@ -9,6 +9,11 @@ package com.leeyonsoft.clonepintrest.models;
 
 public class PhotoEntity implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 285275131732029739L;
+	
 	private Integer id;
 	private String smallPhotoPath;
 	private String bigPhotoPath;

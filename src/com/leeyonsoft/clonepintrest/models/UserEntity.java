@@ -9,6 +9,12 @@ package com.leeyonsoft.clonepintrest.models;
 
 public class UserEntity implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5236893459907721422L;
+	
+	
 	private Integer id;
 	private String name;
 	private String pass;
