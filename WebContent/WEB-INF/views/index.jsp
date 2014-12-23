@@ -29,56 +29,67 @@
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/1.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/2.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/3.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/2.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/3.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/4.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/5.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/6.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/4.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/5.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 				<div class="item">
 					<img
 						src="http://tympanus.net/Development/GridLoadingEffects/images/6.jpg">
 					</img>
+					<div class="itemText">由abc分享</div>
 				</div>
 			</div>
 		</div>
@@ -87,6 +98,7 @@
 	<script type="text/javascript">
 		$(function() {
 			//alert("start");
+			var _data;
 
 			//加载Massonry
 			var $container = $('#container');
@@ -94,12 +106,18 @@
 			var _columnWidth = $container.outerWidth() / 5
 
 			$container.masonry();
-			
+
 			$container.imagesLoaded(function() {
 				$container.masonry({
 					columnWidth : _columnWidth,
 					itemSelector : '.item',
 				});
+			});
+
+			var $loginBtn = $("#siteLogin");
+
+			$loginBtn.click(_data, function() {
+				window.location.href="login.html";
 			});
 
 		});

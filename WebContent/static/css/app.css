@@ -44,6 +44,18 @@ body {
 	width: 100%;
 }
 
+#container .item .itemText
+{
+	margin:-20px 0px 0px 0px;
+	background:rgba(255,255,255,0.3);
+	z-index:1000;
+	position:relative;
+	padding-left:10px;
+	font-size:15px;
+	height:20px;
+	overflow:hidden;
+}
+
 #container .item .w2 {
 	width: 50%;
 }

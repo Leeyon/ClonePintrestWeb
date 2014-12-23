@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	font-family: Segoe UI, 微软雅黑;
+	background: #eee;
+}
+
+#loginPageContainer {
+	margin: 180px auto;
+	width:620px;
+	border:2px solid black;
+}
+
+#loginArea {
+	float: left;
+	margin:10px 10px;
+	border-right:2px solid black;
+}
+
+#registerArea {
+	float: left;
+	margin:10px 10px;
+}
+
+.sectionTitle {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.textItem {
+	margin: 5px 20px 0px 10px;
+}
+
+.textFloat {
+	float: left;
+}
+
+.textTitle {
+	width: 75px;
+}
+
+.textInput {
+	width: 180px;
+}
+
+.btnItem {
+	margin: 10px 0px 0px 10px;
+}
+
+.btn {
+	width: 90px;
+}
