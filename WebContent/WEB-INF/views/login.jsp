@@ -34,6 +34,12 @@
 				<div style="clear: left;"></div>
 			</div>
 			<div class="textItem">
+				<div class="textFloat textTitle">昵称：</div>
+				<input id="txtRegistNickName" class="textFloat textInput"
+					type="password" />
+				<div style="clear: left;"></div>
+			</div>
+			<div class="textItem">
 				<div class="textFloat textTitle">密码：</div>
 				<input id="txtRegistPass" class="textFloat textInput"
 					type="password" />

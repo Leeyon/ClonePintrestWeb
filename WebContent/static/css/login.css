@@ -14,13 +14,14 @@ body {
 
 #loginArea {
 	float: left;
-	margin:10px 10px;
-	border-right:2px solid black;
+	margin:10px 0px 0px 10px
 }
 
 #registerArea {
 	float: left;
-	margin:10px 10px;
+	margin:10px 0px;
+	border-left:2px solid black;
+	padding-left:10px;
 }
 
 .sectionTitle {
