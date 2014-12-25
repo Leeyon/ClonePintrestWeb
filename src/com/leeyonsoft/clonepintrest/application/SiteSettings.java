@@ -10,4 +10,8 @@ public class SiteSettings {
 	
 	//压缩图片的固定宽度
 	public static final int ImageResizedWidth=371;
+	
+	//API的版本号
+	public static final String ApiVersion="1.0.0.0";
+	
 }

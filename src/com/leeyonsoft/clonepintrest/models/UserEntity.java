@@ -17,7 +17,7 @@ public class UserEntity implements java.io.Serializable {
 	
 	private Integer id;
 	private String name;
-	private String pass;
+	private transient String pass;
 	private String displayName;
 
 	public UserEntity() {

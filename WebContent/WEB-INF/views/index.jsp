@@ -117,7 +117,7 @@
 			var $loginBtn = $("#siteLogin");
 
 			$loginBtn.click(_data, function() {
-				window.location.href = "fileupload.html";
+				window.location.href = "login.html";
 			});
 
 		});

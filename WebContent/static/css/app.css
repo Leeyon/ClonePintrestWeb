@@ -32,6 +32,7 @@ body {
 #container {
 	top: 55px;
 	overflow: hidden;
+	position:relative;
 }
 
 #container .item {
