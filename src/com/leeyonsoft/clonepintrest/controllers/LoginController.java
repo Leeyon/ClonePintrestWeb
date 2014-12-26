@@ -12,6 +12,7 @@ import com.leeyonsoft.clonepintrest.dao.UserDao;
 import com.leeyonsoft.clonepintrest.application.SiteSettings;
 import com.leeyonsoft.clonepintrest.models.APIResult;
 import com.leeyonsoft.clonepintrest.models.UserEntity;
+import com.leeyonsoft.clonepintrest.utility.CacheUtil;
 
 /**
  * @author Leeyon
@@ -42,6 +43,7 @@ public class LoginController {
 
 		if (authUser != null) {
 			resultObj.setMessage("µÇÂ¼³É¹¦");
+			CacheUtil.SetUser(authUser);
 		} else {
 			resultObj.setMessage("µÇÂ¼Ê§°Ü");
 		}
@@ -63,7 +65,7 @@ public class LoginController {
 		resultObj.setData(isSucessful);
 
 		if (isSucessful) {
-			resultObj.setMessage("×¢²á³É¹¦");
+			resultObj.setMessage("×¢²á³É¹¦£¬ÇëµÇÂ¼");
 		} else {
 			resultObj.setMessage("×¢²áÊ§°Ü");
 		}
