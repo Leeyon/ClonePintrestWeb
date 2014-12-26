@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ClonePintrest图片分享站</title>
+<title>出错了</title>
 <link rel="stylesheet" href="static/css/login.css" type="text/css" />
 <link rel="stylesheet" href="static/css/app.css" type="text/css" />
 <script type="text/javascript" src="static/js/dev/jquery-2.1.1.js"></script>
@@ -12,24 +12,18 @@
 <body>
 	<div id="appHeader">
 		<div style="min-width: 1024px; margin: 0px 10px;">
-			<div id="siteTitle" class="hover">ClonePintrest 图片分享站</div>
-			<div id="menuItems">
-				<div id="siteUserName">当前用户：${user.displayName}</div>
-			</div>
+			<div id="siteTitle" class="hover">ClonePintrest图片分享站</div>
+			<div id="menuItems"></div>
 			<div style="clear: both"></div>
 		</div>
 	</div>
 	<div id="appBody">
 		<div style="min-width: 1024px; margin: 0px 10px;">
 			<div id="container">
-				<div id="loginPageContainer">
-					<form id="formImageUpload"  method="POST" enctype="multipart/form-data"
-						action="/ClonePintrestWeb/upload.html">
-						选择你要上传的文件： <input type="file" name="file" id="btnFile"/>
-						<input type="hidden" name="uid" value="${user.id}"></input>
-						<div>
-						<input type="submit" value="上传"  id="btnSubmit"/> </div>
-					</form>
+				<div id="errorPageContainer">
+					<div id="errorPageText">
+						<b>${errorMessage}，请<a href="javascript:history.back();">返回</a></b>
+					</div>
 				</div>
 			</div>
 		</div>

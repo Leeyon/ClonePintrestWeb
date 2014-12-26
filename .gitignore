@@ -33,3 +33,7 @@
 build/**/*
 /**/build/*
 /build/
+
+
+# Image Upload Folders #
+WebContent/Images/*

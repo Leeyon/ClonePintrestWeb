@@ -41,7 +41,8 @@
 						<div class="sectionTitle">用户注册</div>
 						<div class="textItem">
 							<div class="textFloat textTitle">用户名：</div>
-							<input  id="txtRegisterName"  class="textFloat textInput" type="text" />
+							<input id="txtRegisterName" class="textFloat textInput"
+								type="text" />
 							<div style="clear: left;"></div>
 						</div>
 						<div class="textItem">
@@ -68,39 +69,49 @@
 
 	<script type="text/javascript">
 		$(function() {
-			
-			
+
 			var _data;
-			var _loginUrl="Auth.html";
-			var _registerUrl="Register.html";
-			
+			var _loginUrl = "Auth.html";
+			var _registerUrl = "Register.html";
+
 			var $loginBtn = $("#btnLogin");
-			var $registerButton=$("#btnRegister");
+			var $registerButton = $("#btnRegister");
 
 			$loginBtn.click(_data, function() {
-				
+
 				var _name = $("#txtLoginName").val();
 				var _pass = $("#txtLoginPass").val();
-				
-				$.post(_loginUrl,
-						{"name":_name,"pass":_pass},
-						function(jsonData){
-							alert(jsonData);
-						});
-				
+
+				$.post(_loginUrl, {
+					"name" : _name,
+					"pass" : _pass
+				}, function(jsonData) {
+					var resultObj = $.parseJSON(jsonData);
+					//登录成功
+					if (resultObj.apiStatus == 1) {
+						window.location.href = "user.html?uid="
+								+ resultObj.data.id;
+					} else {
+						alert(resultObj.message);
+					}
+				});
+
 			});
-			
+
 			$registerButton.click(_data, function() {
-				
+
 				var _name = $("#txtRegisterName").val();
 				var _pass = $("#txtRegisterPass").val();
-				var _displayName=$("#txtRegisterNickName").val();
-				
-				$.post(_registerUrl,
-						{"name":_name,"pass":_pass,"displayName":_displayName},
-						function(jsonData){
-							alert(jsonData);
-						});
+				var _displayName = $("#txtRegisterNickName").val();
+
+				$.post(_registerUrl, {
+					"name" : _name,
+					"pass" : _pass,
+					"displayName" : _displayName
+				}, function(jsonData) {
+					var resultObj = $.parseJSON(jsonData);
+					alert(resultObj.message);
+				});
 			});
 
 		});

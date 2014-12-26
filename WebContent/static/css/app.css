@@ -29,10 +29,35 @@ body {
 	margin: 10px auto;
 }
 
+#menuItems
+{
+	float: right;
+	font-size: 20px;
+	margin: 10px auto;
+}
+
+#siteUserName {
+	float: left;
+	font-size: 18px;
+	margin:5px 10px 0px 5px;
+}
+
+#siteMenu {
+	cursor: pointer;
+	float: left;
+	background:url(../img/add_button.png);
+	width:48px;
+	height:48px;
+}
+
+.hover {
+	cursor: pointer;
+}
+
 #container {
 	top: 55px;
 	overflow: hidden;
-	position:relative;
+	position: relative;
 }
 
 #container .item {
@@ -45,18 +70,50 @@ body {
 	width: 100%;
 }
 
-#container .item .itemText
-{
-	margin:-20px 0px 0px 0px;
-	background:rgba(255,255,255,0.3);
-	z-index:1000;
-	position:relative;
-	padding-left:10px;
-	font-size:15px;
-	height:20px;
-	overflow:hidden;
+#container .item .itemText {
+	margin: -20px 0px 0px 0px;
+	background: rgba(255, 255, 255, 0.3);
+	z-index: 1000;
+	position: relative;
+	padding-left: 10px;
+	font-size: 15px;
+	height: 20px;
+	overflow: hidden;
 }
 
 #container .item .w2 {
 	width: 50%;
+}
+
+#formImageUpload
+{
+	margin:10px 10px;
+}
+
+#btnFile
+{
+	height:30px;
+}
+
+#btnSubmit
+{
+	width:90px;
+}
+
+#errorPageContainer
+{
+	margin: 180px auto;
+	width:620px;
+	border:2px solid black;
+}
+
+#errorPageText
+{
+	margin:10px auto;
+	text-align:center;
+}
+
+#errorPageText a
+{
+	color:#000;
 }

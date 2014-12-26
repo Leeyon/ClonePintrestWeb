@@ -43,9 +43,11 @@ public class LoginController {
 
 		if (authUser != null) {
 			resultObj.setMessage("µÇÂ¼³É¹¦");
+			resultObj.setApiStatus(1);
 			CacheUtil.SetUser(authUser);
 		} else {
 			resultObj.setMessage("µÇÂ¼Ê§°Ü");
+			resultObj.setApiStatus(0);
 		}
 		result = gson.toJson(resultObj);
 		return result;
@@ -65,9 +67,11 @@ public class LoginController {
 		resultObj.setData(isSucessful);
 
 		if (isSucessful) {
+			resultObj.setApiStatus(1);
 			resultObj.setMessage("×¢²á³É¹¦£¬ÇëµÇÂ¼");
 		} else {
 			resultObj.setMessage("×¢²áÊ§°Ü");
+			resultObj.setApiStatus(0);
 		}
 		result = gson.toJson(resultObj);
 		return result;

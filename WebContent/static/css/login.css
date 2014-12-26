@@ -1,11 +1,5 @@
 @CHARSET "UTF-8";
 
-body {
-	margin: 0;
-	font-family: Segoe UI, 微软雅黑;
-	background: #eee;
-}
-
 #loginPageContainer {
 	margin: 180px auto;
 	width:620px;
