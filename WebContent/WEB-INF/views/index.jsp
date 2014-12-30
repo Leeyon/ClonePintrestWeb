@@ -71,7 +71,7 @@
 
 					<c:otherwise>
 					
-					尚未上传任何照片哦
+					<div id="errorPageText">尚未上传任何照片哦</div>
 					
 					<script type="text/javascript">
 						$(function() {
